@@ -1,0 +1,247 @@
+body 
+{
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar 
+{
+  background-color: #4452d2;
+  padding: 10px;
+}
+
+.buttons button 
+{
+  margin-right: 10px;
+  padding: 8px 16px;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 7px;
+  font-size: 22px;
+}
+
+.buttons button:hover
+{
+  background-color: rgb(222, 24, 219);
+  color: white;
+}
+
+a
+{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover 
+{
+  color: white;
+}
+
+.buttons button:hover
+{
+  background-color: rgb(222, 24, 219);
+  color: white;
+}
+
+.container 
+{
+  display: flex;
+  align-items: center;          
+  justify-content: center;      
+  gap: 40px;                    
+  padding: 50px;
+}
+
+.text 
+{
+  flex: 1;
+}
+
+#header 
+{
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+#text 
+{
+  font-size: 14px;
+  font-family: 'Lucida Sans';
+  line-height: 1.6;
+}
+
+.image 
+{
+  width: 400px;
+  height: auto;
+  object-fit: contain;
+}
+
+.arrow-text 
+{
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 19px;
+  margin-top: 20px; 
+}
+
+.arrow-text img 
+{
+  width: 40px;  
+  height: auto;
+  margin-right: 15px; 
+}
+
+@media (max-width: 768px) 
+{
+  .container 
+  {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image 
+  {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 475px) 
+{
+  .container 
+  {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  #header 
+  {
+    font-size: 36px;
+  }
+
+  #text 
+  {
+    font-size: 12px;
+  }
+
+  .image 
+  {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .arrow-text 
+  {
+    font-size: 28px;
+    flex-direction: column;
+  }
+
+  .arrow-text img 
+  {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+
+  .buttons button 
+  {
+    font-size: 16px;
+    padding: 6px 12px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) 
+{
+  .container 
+  {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    padding: 30px;
+  }
+
+  #header 
+  {
+    font-size: 48px;
+  }
+
+  #text 
+  {
+    font-size: 13px;
+  }
+
+  .image 
+  {
+    max-width: 350px;
+  }
+
+  .arrow-text 
+  {
+    font-size: 36px;
+  }
+
+  .buttons button 
+  {
+    font-size: 18px;
+    padding: 7px 14px;
+  }
+}
+
+@media (min-width: 1025px) 
+{
+  .container 
+  {
+    flex-direction: row;
+    padding: 50px;
+    gap: 40px;
+  }
+
+  #header 
+  {
+    font-size: 65px;
+  }
+
+  #text 
+  {
+    font-size: 14px;
+  }
+
+  .image 
+  {
+    width: 400px;
+  }
+
+  .arrow-text 
+  {
+    font-size: 48px;
+  }
+
+  .buttons button 
+  {
+    font-size: 22px;
+    padding: 8px 16px;
+  }
+}
+
+@keyframes slideUp 
+{
+  from 
+  {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to 
+  {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container 
+{
+  animation: slideUp 1s ease-out forwards;
+}
